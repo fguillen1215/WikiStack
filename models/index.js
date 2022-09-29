@@ -30,6 +30,7 @@ Page.addHook("beforeValidate", (page, options) =>{
     page.slug = slugTitle(page.title);
 });
 
+
 const User = db.define('user', {
     name: {
         type: Sequelize.STRING,
